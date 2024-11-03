@@ -8,6 +8,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
         <style>
+            p{
+                font-family: Roboto, Arial;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
             .thumbnail{
                 width: 300px;
                 display: inline-block;
@@ -42,11 +47,23 @@
 
             .video-title{
                 margin-top: 0px;
-                font-weight: bold;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                margin-bottom: 12px;
             }
 
             .thumbnail-row{
                 margin-bottom: 12px;
+            }
+
+            .video-author, .video-stats{
+                font-size: 12px;
+                color: rgb(96, 96, 96);
+            }
+
+            .video-author{
+                margin-bottom: 4px;
             }
         </style>
     </head>
@@ -83,18 +100,32 @@
         </div>
 
         <div class="video-preview">
-            <img class="thumbnail" src ="/thumbnails/thumbnail-2.webp">
-        <p class="video-title">           
-            Try Not To Laugh Challenge #9
-        </p>
+            <div class="thumbnail-row">
+                <img class="thumbnail" src ="/thumbnails/thumbnail-2.webp">
+            </div>
 
-        <p class="video-author">
-            Markiplier
-        </p>
-
-        <p class="video-stats">
-            19M views &#183 4 years ago
-        </p>
+            <div>
+                <div class="channel-picture">
+                    <img class="profile-picture" src ="/channel-pictures/channel-2.jpeg">
+                </div>
+                <div class="video-info">
+                    <div>
+                        <p class="video-title">           
+                            Try Not To Laugh Challenge #9
+                        </p>
+                    </div>
+                    <div>
+                        <p class="video-author">
+                            Markiplier
+                        </p>
+                    </div>
+                    <div>
+                        <p class="video-stats">
+                            19M views &#183 4 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
